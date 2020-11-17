@@ -1,4 +1,3 @@
 # Python-Projects
 
-This is a collection of projects completed at the end of (or during) online courses.
-
+Esto es una colección de proyectos o trabajos en Python que fueron hechos durante cursos online o al final de los mismos.
