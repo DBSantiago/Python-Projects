@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-#Defino las funciones a usar
 def tablero(A):                                     
     """Dibuja un tablero de Ta-Te-Ti con
     los valores de la matriz A. Precondición:
@@ -46,20 +45,20 @@ def partida_terminada(A):
     for x in range(0,3):
         contador = A[x].count('_')
     
-    for x in range(0,3):                                        #Ganadores por fila   
+    for x in range(0,3):                                        
         if A[x] == ['X','X','X']:
             print('Partida terminada. Ganó la X!')
             return True
         elif A[x] == ['O','O','O']:
             print('Partida terminada. Ganó la O!')
             return True
-        elif A[0][x] == A[1][x] == A[2][x] == 'X':            #Ganadores por columna
+        elif A[0][x] == A[1][x] == A[2][x] == 'X':            
             print('Partida terminada. Ganó la X!')
             return True
         elif A[0][x] == A[1][x] == A[2][x] == 'O':
             print('Partida terminada. Ganó la O!')
             return True
-        elif A[0][0] == A[1][1] == A[2][2] == 'X' or A[2][0] == A[1][1] == A[0][2] == 'X':              #Ganadores por diagonal
+        elif A[0][0] == A[1][1] == A[2][2] == 'X' or A[2][0] == A[1][1] == A[0][2] == 'X':              
             print('Partida terminada. Ganó la X!')
             return True
         elif A[0][0] == A[1][1] == A[2][2] == 'O' or A[2][0] == A[1][1] == A[0][2] == 'O':
@@ -80,7 +79,7 @@ def partida_terminada(A):
 print('Bienvenido a jugar a Ta-Te-Ti!')
 a = input('Elija O ó X para jugar.')
 iniciador = 1
-while iniciador == 1 :                              #Asignamos X o O a los jugadores
+while iniciador == 1 :                              
     if a.upper() == 'X' or a.upper() == 'O':
         jugador1 = 'X'
         jugador2 = 'O'
@@ -95,10 +94,10 @@ posiciones = [
     [4,5,6],
     [1,2,3]
 ]
-tablero(posiciones)                                #Es la función que dibuja el tablero con los datos de la matriz pasada como argumento
+tablero(posiciones)                                
 
 
-jugada = [                                         #Es la matriz que voy a usar para guardar las jugadas de los usuarios
+jugada = [                                         
     ['_','_','_'],
     ['_','_','_'],
     ['_','_','_']
