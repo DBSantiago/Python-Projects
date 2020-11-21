@@ -1,4 +1,4 @@
-El objetivo de est trabajo es empezar a trabajar con Programación Orientada a Objetos y clases.
+El objetivo de este trabajo es empezar a trabajar con Programación Orientada a Objetos y clases.
 
 CONSIGNA
 
